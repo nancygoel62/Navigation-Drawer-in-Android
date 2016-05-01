@@ -17,7 +17,7 @@ public class tabbar1 extends Fragment {
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle bundle) {
-        View v = inflater.inflate(R.layout.content_main, container, false);
+        View v = inflater.inflate(R.layout.tabbar1, container, false);
         return v;
     }
 
