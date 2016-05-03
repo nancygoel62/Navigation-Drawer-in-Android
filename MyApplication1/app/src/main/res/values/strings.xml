@@ -5,27 +5,15 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string-array name="Names">
-        <item>Tom</item>
-        <item>Shanni</item>
-        <item>Maddy</item>
-        <item>Kate</item>
-        <item>Nikhil</item>
-    </string-array>
 
     <array name="Profile_Pics">
+
         <item>@drawable/image1</item>
         <item>@drawable/image1</item>
         <item>@drawable/image1</item>
         <item>@drawable/image1</item>
         <item>@drawable/image1</item>
+
     </array>
-    <string-array name="Hobby">
-        <item>playing</item>
-        <item>music</item>
-        <item>sports</item>
-        <item>reading</item>
-        <item>games</item>
-    </string-array>
 
 </resources>

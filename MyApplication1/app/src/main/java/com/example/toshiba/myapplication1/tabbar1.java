@@ -18,12 +18,14 @@ import java.util.List;
 
 public class tabbar1 extends Fragment {
 
-    String[] name;
-    String[] hobby;
+    String[] name={"Tom","Harry","Alen","Shenna","Kite"};
+    String[] hobby={"Playing","Music","Sports","Reading","Games"};
+    String[] status={"I just love to play.","I like to play music.","Sports keeps me fit.","Reading makes my mind sharp.","Games keeps me fit and fine."};
+
     TypedArray profile_pics;
     List<rowItem> rowItems;
-    ListView mylistview;
-
+    ListView mylistview , getMylistview;
+    int i;
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
     }
@@ -32,13 +34,14 @@ public class tabbar1 extends Fragment {
         View v = inflater.inflate(R.layout.tabbar1, container, false);
         rowItems = new ArrayList<rowItem>();
 
-        name=getResources().getStringArray(R.array.Names);
-        hobby=getResources().getStringArray(R.array.Hobby);
+  //      name=getResources().getStringArray(R.array.Names);
+  //      hobby=getResources().getStringArray(R.array.Hobby);
         profile_pics=getResources().obtainTypedArray(R.array.Profile_Pics);
-
-        for (int i=0;i<name.length;i++)
+        i=0;
+        for (i=0;i<5;i++)
         {
-            rowItem item=new rowItem(name[i],profile_pics.getResourceId(i,-1),hobby[i]);
+            System.out.print(i);
+            rowItem item=new rowItem(name[i],profile_pics.getResourceId(0,-1),hobby[i],status[i]);
             rowItems.add(item);
         }
 

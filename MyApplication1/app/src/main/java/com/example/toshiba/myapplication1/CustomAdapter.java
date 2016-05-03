@@ -17,6 +17,7 @@ import java.util.List;
 public class CustomAdapter extends BaseAdapter {
     Context context;
     List<rowItem> rowItems;
+
     CustomAdapter(Context context, List<rowItem> rowItems)
     {this.context=context;this.rowItems=rowItems;}
 
@@ -33,6 +34,7 @@ public class CustomAdapter extends BaseAdapter {
         ImageView profile_pic;
         TextView name;
         TextView hobby;
+        TextView status;
     }
 
     @Override
@@ -47,14 +49,27 @@ public class CustomAdapter extends BaseAdapter {
             holder=new ViewHolder();
 
             holder.name= (TextView)convertView.findViewById(R.id.names);
-
             holder.profile_pic= (ImageView)convertView.findViewById(R.id.profile);
             holder.hobby= (TextView)convertView.findViewById(R.id.hobby);
+            holder.status=(TextView)convertView.findViewById(R.id.status);
 
             rowItem row_pos= rowItems.get(position);
             holder.profile_pic.setImageResource(row_pos.getProfile_id());
             holder.name.setText(row_pos.getName());
             holder.hobby.setText(row_pos.getHobby());
+            holder.status.setText(row_pos.getStatus());
+
+            if(position==0)
+                convertView.setBackgroundColor(0xF7DAA680);
+            else if(position==1)
+                convertView.setBackgroundColor(0xFFF4D71E);
+            else if(position==2)
+                convertView.setBackgroundColor(0xFFFFA012);
+            else if(position==3)
+                convertView.setBackgroundColor(0xF7DAA680);
+            else
+            convertView.setBackgroundColor(0xF62FD6CD);
+
         }
         return convertView;
     }

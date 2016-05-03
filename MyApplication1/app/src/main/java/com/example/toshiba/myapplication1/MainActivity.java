@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-              adapter.addFragment(new tabbar1(),"Tab1");
+            adapter.addFragment(new tabbar1(),"Tab1");
             adapter.addFragment(new tabbar1(),"Tab2");
             adapter.addFragment(new tabbar1(),"Tab3");
 

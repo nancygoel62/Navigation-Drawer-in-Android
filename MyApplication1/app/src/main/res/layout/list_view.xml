@@ -3,24 +3,40 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
         android:id="@+id/profile"
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp"/>
+
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/names"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_toRightOf="@+id/profile"
-        android:text="text"/>
+        android:text="text"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/hobby"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:layout_toRightOf="@+id/profile"
         android:layout_below="@+id/names"
-        android:text="text2"/>
+        android:text="text2"
+        android:textSize="18dp"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/profile"
+        android:layout_below="@+id/hobby"
+        android:text="text3"
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"/>
+
 </RelativeLayout>
