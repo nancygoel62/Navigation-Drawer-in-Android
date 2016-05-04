@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:theme="@style/AppTheme.AppBarOverlay"
-        android:background="#FF1245"
+        android:background="#0b6403"
         >
 
         <android.support.v7.widget.Toolbar
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             app:tabMode="fixed"
             app:tabGravity="fill"
-            app:tabTextColor="#d41536ef"/>
+            app:tabTextColor="#d4ffffff"/>
 
 
     </android.support.design.widget.AppBarLayout>

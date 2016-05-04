@@ -18,9 +18,9 @@ import java.util.List;
 
 public class tabbar1 extends Fragment {
 
-    String[] name={"Tom","Harry","Alen","Shenna","Kite"};
-    String[] hobby={"Playing","Music","Sports","Reading","Games"};
-    String[] status={"I just love to play.","I like to play music.","Sports keeps me fit.","Reading makes my mind sharp.","Games keeps me fit and fine."};
+    String[] name={"China Wall","Colosseum in Rome","Taj","Pyramid of Giza","Hagia Sophia", "Stonehenge"};
+    String[] hobby={"China","Rome","India","Egypt","Istanbul", "England"};
+    String[] status={"Wall to protect China","Rome a place to live and die","The indian beauty","Pyramids, the place for Mummy","Please google it, its a great place to go", "Beware of stones, Bye!"};
 
     TypedArray profile_pics;
     List<rowItem> rowItems;
@@ -33,15 +33,12 @@ public class tabbar1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle bundle) {
         View v = inflater.inflate(R.layout.tabbar1, container, false);
         rowItems = new ArrayList<rowItem>();
-
-  //      name=getResources().getStringArray(R.array.Names);
-  //      hobby=getResources().getStringArray(R.array.Hobby);
-        profile_pics=getResources().obtainTypedArray(R.array.Profile_Pics);
+    profile_pics=getResources().obtainTypedArray(R.array.Profile_Pics);
         i=0;
-        for (i=0;i<5;i++)
+        for (i=0;i<6;i++)
         {
             System.out.print(i);
-            rowItem item=new rowItem(name[i],profile_pics.getResourceId(0,-1),hobby[i],status[i]);
+            rowItem item=new rowItem(name[i],profile_pics.getResourceId(i,-1),hobby[i],status[i]);
             rowItems.add(item);
         }
 

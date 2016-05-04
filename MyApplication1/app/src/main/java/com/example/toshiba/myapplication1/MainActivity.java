@@ -1,6 +1,7 @@
 package com.example.toshiba.myapplication1;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.app.FragmentManager.*;
+import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,10 +30,16 @@ public class MainActivity extends AppCompatActivity
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
+    private int[] tabIcons = {
+            R.drawable.ic_menu_share,
+            R.drawable.ic_menu_camera,
+            R.drawable.ic_menu_share
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -123,12 +132,18 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    private void setupTabIcons() {
+        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
+    }
+
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-            adapter.addFragment(new tabbar1(),"Tab1");
-            adapter.addFragment(new tabbar1(),"Tab2");
-            adapter.addFragment(new tabbar1(),"Tab3");
+            adapter.addFragment(new tabbar1(),"Favorite");
+            adapter.addFragment(new tabbar1(),"Pending");
+            adapter.addFragment(new tabbar1(),"Visited");
 
 
         viewPager.setAdapter(adapter);

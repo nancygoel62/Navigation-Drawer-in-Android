@@ -5,19 +5,19 @@
         <item
             android:id="@+id/tab1"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Tab1" />
+            android:title="Contact Guide" />
         <item
             android:id="@+id/tab2"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Tab2" />
+            android:title="Get Tickets" />
         <item
             android:id="@+id/tab3"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Tab3" />
+            android:title="Ask for Help" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Contact Us" />
     </group>
 
     <item android:title="Communicate">
@@ -25,11 +25,11 @@
             <item
                 android:id="@+id/tab11"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Tab1" />
+                android:title="Share App" />
             <item
                 android:id="@+id/tab22"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Tab2" />
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Rate this App" />
         </menu>
     </item>
 

@@ -14,21 +14,21 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@android:drawable/sym_def_app_icon"
+        android:paddingTop="10dp"
+        android:src="@android:drawable/ic_dialog_map"
         android:id="@+id/imageView" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="FIIT JEE"
+        android:text="GO AHEAD"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="nancygoel62@gmail.com"
+        android:text="with a great app"
         android:layout_marginBottom="1dp"
         android:id="@+id/textView" />
 

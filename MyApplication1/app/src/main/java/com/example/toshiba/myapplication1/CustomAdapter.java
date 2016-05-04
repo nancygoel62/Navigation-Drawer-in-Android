@@ -59,16 +59,13 @@ public class CustomAdapter extends BaseAdapter {
             holder.hobby.setText(row_pos.getHobby());
             holder.status.setText(row_pos.getStatus());
 
-            if(position==0)
-                convertView.setBackgroundColor(0xF7DAA680);
-            else if(position==1)
-                convertView.setBackgroundColor(0xFFF4D71E);
-            else if(position==2)
-                convertView.setBackgroundColor(0xFFFFA012);
-            else if(position==3)
-                convertView.setBackgroundColor(0xF7DAA680);
-            else
-            convertView.setBackgroundColor(0xF62FD6CD);
+            if(position%3==0)
+                convertView.setBackgroundColor(0xFF08A4A9);
+            else if(position%3==1)
+                convertView.setBackgroundColor(0xFFCEA10D);
+            else if(position%3==2)
+                convertView.setBackgroundColor(0xFFF98ED7);
+
 
         }
         return convertView;
