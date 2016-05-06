@@ -21,13 +21,18 @@
         <activity
             android:name=".Activity1"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".Activity2"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".Activity3"
-            android:parentActivityName=".MainActivity"/>
-
+        <activity
+            android:name=".Activity2"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activity3"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".contactguide" />
+        <activity android:name=".rate" />
+        <activity android:name=".help" />
+        <activity android:name=".share" />
+        <activity android:name=".contact" />
+        <activity android:name=".tickets"></activity>
     </application>
 
 </manifest>

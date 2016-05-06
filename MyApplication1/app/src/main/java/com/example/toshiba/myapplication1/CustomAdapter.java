@@ -41,7 +41,7 @@ public class CustomAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         ViewHolder holder=null;
-
+        final View row;
         LayoutInflater inflater=(LayoutInflater)context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         if(convertView==null)
         {
@@ -64,10 +64,16 @@ public class CustomAdapter extends BaseAdapter {
             else if(position%3==1)
                 convertView.setBackgroundColor(0xFFCEA10D);
             else if(position%3==2)
-                convertView.setBackgroundColor(0xb70797);
+            {convertView.setBackgroundColor(0xb70797);holder.name.setTextColor(0xEFAF0476);holder.hobby.setTextColor(0xFF264DB9);}
 
 
         }
+        else
+        {
+            row = convertView;
+            holder = (ViewHolder) row.getTag();
+        }
+
         return convertView;
     }
 

@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity
     private ViewPager viewPager;
     private DrawerLayout drawer;
     private int[] tabIcons = {
-            R.drawable.ic_menu_share,
+            R.drawable.hamburger,
             R.drawable.ic_menu_camera,
             R.drawable.ic_menu_share
     };
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity
         tabLayout=(TabLayout)findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_action_menu);
+        //getSupportActionBar().setHomeAsUpIndicator(R.drawable.hamburger);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
@@ -109,33 +109,38 @@ public class MainActivity extends AppCompatActivity
 
         int id = item.getItemId();
        // FragmentManager fragmentManager= getFragmentManager();
-        if (id == R.id.tab1) {
+        if (id == R.id.contactguide) {
 
-            Intent intent = new Intent(this, Activity1.class);
+            Intent intent = new Intent(this, contactguide.class);
             startActivity(intent);
 
         }
-        else if (id == R.id.tab2) {
+        else if (id == R.id.tickets) {
 
-            Intent intent= new Intent(this, Activity2.class);
+            Intent intent= new Intent(this, tickets.class);
             startActivity(intent);
 
         }
-        else if (id == R.id.tab3) {
-            Intent intent= new Intent(this, Activity3.class);
+        else if (id == R.id.help) {
+            Intent intent= new Intent(this, help.class);
             startActivity(intent);
 
         }
-        else if (id == R.id.tab11) {
-            Intent intent= new Intent(this, Activity1.class);
+        else if (id == R.id.contact) {
+            Intent intent= new Intent(this, contact.class);
             startActivity(intent);
 
         }
-        else if (id == R.id.tab22) {
-            Intent intent= new Intent(this, Activity2.class);
+        else if (id == R.id.share) {
+            Intent intent= new Intent(this, share.class);
             startActivity(intent);
         }
 
+        else if(id==R.id.rate)
+        {
+            Intent intent= new Intent(this, rate.class);
+            startActivity(intent);
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         drawer.closeDrawer(GravityCompat.START);
