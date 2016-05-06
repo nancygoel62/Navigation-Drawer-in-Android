@@ -12,12 +12,12 @@
     <array name="Profile_Pics">
 
 
+        <item>@drawable/chinawall</item>
+        <item>@drawable/colosseum</item>
         <item>@drawable/taj</item>
-        <item>@drawable/taj</item>
-        <item>@drawable/taj</item>
-        <item>@drawable/taj</item>
-        <item>@drawable/taj</item>
-        <item>@drawable/taj</item>
+        <item>@drawable/pyrgiza</item>
+        <item>@drawable/hagiasophia</item>
+        <item>@drawable/stone</item>
 
 
     </array>

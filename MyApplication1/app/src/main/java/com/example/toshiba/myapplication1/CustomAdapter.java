@@ -64,7 +64,7 @@ public class CustomAdapter extends BaseAdapter {
             else if(position%3==1)
                 convertView.setBackgroundColor(0xFFCEA10D);
             else if(position%3==2)
-                convertView.setBackgroundColor(0xFFF98ED7);
+                convertView.setBackgroundColor(0xb70797);
 
 
         }
