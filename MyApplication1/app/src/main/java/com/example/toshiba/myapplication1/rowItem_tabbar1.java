@@ -3,14 +3,14 @@ package com.example.toshiba.myapplication1;
 /**
  * Created by toshiba on 2/5/16.
  */
-public class rowItem {
+public class rowItem_tabbar1 {
 
     private String name;
     private int profile_id;
     private String hobby;
     private String status;
 
-    public rowItem(String name, int profile_id, String hobby, String status)
+    public rowItem_tabbar1(String name, int profile_id, String hobby, String status)
     {
         this.name=name;
         this.hobby=hobby;
